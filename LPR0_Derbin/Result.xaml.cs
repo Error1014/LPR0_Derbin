@@ -53,5 +53,12 @@ namespace LPR0_Derbin
             }
             
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow MW = new MainWindow();
+            this.Close();
+            MW.Show();
+        }
     }
 }

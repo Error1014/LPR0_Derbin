@@ -9,5 +9,6 @@
     <Grid>
         <TextBlock x:Name="ResultRedTextBlock" Width="400" Height="Auto" TextWrapping="Wrap" Margin="50,10,50,383" Foreground="Red" FontWeight="Bold"/>
         <TextBlock x:Name="ResultTextBlock" Width="400" Height="Auto" TextWrapping="Wrap" Margin="50,89,50,30"/>
+        <Button Height="50" FontSize="20" Margin="10,400,415,10" Click="Button_Click">Назад</Button>
     </Grid>
 </Window>

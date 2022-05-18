@@ -8,20 +8,20 @@
         Title="MainWindow" Height="500" Width="500">
     <Grid>
         <Canvas>
-            <TextBlock x:Name="numTextBlock" Text="Точка №1" Canvas.Left="180"/>
+            <TextBlock TextAlignment="Center" x:Name="numTextBlock" Text="Точка №1" Canvas.Left="208" HorizontalAlignment="Left" Canvas.Top="10" VerticalAlignment="Center"/>
             <TextBlock FontSize="10" Width="350" Text="Ввод дробного числа с помощью запятой а не точки, иначе я вылечу" Canvas.Left="20" Canvas.Top="330" HorizontalAlignment="Center" VerticalAlignment="Top" Height="19"/>
-            <StackPanel Canvas.Left="250" Canvas.Top="100">
+            <StackPanel Canvas.Left="220" Canvas.Top="100">
                 <TextBox x:Name="textBoxKoor1"/>
                 <TextBox x:Name="textBoxKoor2"/>
                 <TextBox x:Name="textBoxKoor3"/>
 
             </StackPanel>
-            <StackPanel Canvas.Left="220" Canvas.Top="100" HorizontalAlignment="Left" VerticalAlignment="Center" Width="15">
+            <StackPanel Canvas.Left="200" Canvas.Top="100" HorizontalAlignment="Left" VerticalAlignment="Center" Width="15">
                 <TextBlock Text="X"/>
                 <TextBlock Text="Y"/>
                 <TextBlock Text="Z"/>
             </StackPanel>
-            <Button Content="Далее" Click="NextKoordinate" Canvas.Left="176" Canvas.Top="386"/>
+            <Button Content="Далее"  Click="NextKoordinate" Canvas.Left="180" Canvas.Top="386"  HorizontalAlignment="Left" VerticalAlignment="Center" Width="140" Height="50" Padding="40,0,0,0"/>
         </Canvas>
     </Grid>
 </Window>

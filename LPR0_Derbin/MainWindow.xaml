@@ -10,9 +10,9 @@
         <Canvas>
             <TextBlock TextAlignment="Center" x:Name="numTextBlock" Text="Точка №1" Canvas.Left="208" HorizontalAlignment="Left" Canvas.Top="10" VerticalAlignment="Center"/>
             <StackPanel Canvas.Left="220" Canvas.Top="100">
-                <TextBox x:Name="textBoxKoor1" TextInput="textBoxKoor1_TextInput" />
-                <TextBox x:Name="textBoxKoor2" TextInput="textBoxKoor1_TextInput" />
-                <TextBox x:Name="textBoxKoor3" TextInput="textBoxKoor1_TextInput" />
+                <TextBox x:Name="textBoxKoor1" PreviewTextInput="textBoxKoor1_TextInput"/>
+                <TextBox x:Name="textBoxKoor2" PreviewTextInput="textBoxKoor1_TextInput"/>
+                <TextBox x:Name="textBoxKoor3" PreviewTextInput="textBoxKoor1_TextInput"/>
 
             </StackPanel>
             <StackPanel Canvas.Left="200" Canvas.Top="100" HorizontalAlignment="Left" VerticalAlignment="Center" Width="15">

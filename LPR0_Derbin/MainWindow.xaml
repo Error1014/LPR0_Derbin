@@ -9,11 +9,10 @@
     <Grid>
         <Canvas>
             <TextBlock TextAlignment="Center" x:Name="numTextBlock" Text="Точка №1" Canvas.Left="208" HorizontalAlignment="Left" Canvas.Top="10" VerticalAlignment="Center"/>
-            <TextBlock FontSize="10" Width="350" Text="Ввод дробного числа с помощью запятой а не точки, иначе я вылечу" Canvas.Left="20" Canvas.Top="330" HorizontalAlignment="Center" VerticalAlignment="Top" Height="19"/>
             <StackPanel Canvas.Left="220" Canvas.Top="100">
-                <TextBox x:Name="textBoxKoor1"/>
-                <TextBox x:Name="textBoxKoor2"/>
-                <TextBox x:Name="textBoxKoor3"/>
+                <TextBox x:Name="textBoxKoor1" TextInput="textBoxKoor1_TextInput" />
+                <TextBox x:Name="textBoxKoor2" TextInput="textBoxKoor1_TextInput" />
+                <TextBox x:Name="textBoxKoor3" TextInput="textBoxKoor1_TextInput" />
 
             </StackPanel>
             <StackPanel Canvas.Left="200" Canvas.Top="100" HorizontalAlignment="Left" VerticalAlignment="Center" Width="15">

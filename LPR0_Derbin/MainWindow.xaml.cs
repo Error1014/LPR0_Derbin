@@ -48,7 +48,8 @@ namespace LPR0_Derbin
         }
         public float ProverkaPole(string s)
         {
-            if (s=="")
+            if (s=="" +
+                "")
             {
                 return 0;
             }
@@ -59,20 +60,18 @@ namespace LPR0_Derbin
         }
         private void ClearPole()
         {
-            textBoxKoor1.Text = " ";
-            textBoxKoor2.Text = " ";
-            textBoxKoor3.Text = " ";
+            textBoxKoor1.Text = "";
+            textBoxKoor2.Text = "";
+            textBoxKoor3.Text = "";
 
         }
 
         private List<Otrezki> GetAllOtrez()
         {
-            int n = 0;
             for (int i = 0; i < points.Count(); i++)
             {
                 for (int j = i+1; j < points.Count(); j++)
                 {
-                    n++;
                     //MessageBox.Show(points[j].X.ToString()+" "+ points[j].X.ToString() + " " + points[j].X.ToString());
                     double distance = Math.Sqrt(((points[i].X - points[j].X) * (points[i].X - points[j].X)) + ((points[i].Y - points[j].Y) * (points[i].Y - points[j].Y)) + ((points[i].Z - points[j].Z) * (points[i].Z - points[j].Z)));
                     otrezki.Add(new Otrezki(ABC[i], ABC[j], Math.Round(distance, 3)));
@@ -81,6 +80,16 @@ namespace LPR0_Derbin
             return otrezki;
         }
 
+        private void textBoxKoor1_TextInput(object sender, TextCompositionEventArgs e)
+        {
+            var textBox = (TextBox)sender;
+            if (!(Char.IsDigit(e.Text, 0) || (e.Text == ",")
+               && (!textBox.Text.Contains(".")
+               && textBox.Text.Length != 0)))
+            {
+                e.Handled = true;
+            }
+        }
     }
 
     public class Point
